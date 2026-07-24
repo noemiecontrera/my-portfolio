@@ -1,17 +1,75 @@
+@import url('layout.css');
+@import url('components.css');
+
 * {
-    background-color: #1E1E1E;
+    background-color: #1C0820;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-.mainbtn {
-    background-color: #FFFFFF;
-    border: none;
-    border-radius: 15px;
-    color: #1E1E1E;
+
+/*Header*/
+
+header {
+    position: sticky;
+    padding: 15px 8%;
+    top: 0;
+    
+}
+
+.navlist {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    max-height: 30px;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    
+}
+
+.navlist a {
+    color: #FFFFFF;
     font-weight: bold;
-    height: 37px;
-    position: absolute;
-    right: 20px;
-    width: 135px;
-    padding: 10px 14px;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.footer-icons {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    
+}
+
+.footer-icons i{
+    color: #1C0820;
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 30px;
+    cursor: pointer;
+
 }
