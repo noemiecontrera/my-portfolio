@@ -1,0 +1,30 @@
+.mainbtn {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    color: #1C0820;
+    font-weight: bold;
+    height: 37px;
+    position: absolute;
+    right: 20px;
+    width: 135px;
+    padding: 10px 14px;
+}
+
+
+.v-line {
+    border-left: 10px solid #FFFFFF;
+    height: 1200px;
+    position: absolute;
+    left: 350px;
+    margin-left: -3px;
+    top: 175px;
+}
+
+.timeline{
+    justify-self: center;    
+    width: 770px;
+
+}
+
+/* CARDS PROJETOS
