@@ -67,3 +67,13 @@
     text-align: left;
     text-align: justify;
 }
+
+#full-timeline{
+    text-align: center;
+    display: flex;
+    max-height: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 100px;
+    margin-top: 50px;
+} 
