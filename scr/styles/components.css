@@ -10,21 +10,20 @@
     width: 135px;
     padding: 10px 14px;
 }
-
+ 
 
 .v-line {
     border-left: 10px solid #FFFFFF;
-    height: 1200px;
-    position: absolute;
-    left: 350px;
-    margin-left: -3px;
+    height: 1635px;
+    /*left: 350px;*/
     top: 175px;
 }
 
-.timeline{
-    justify-self: center;    
+.timeline{   
     width: 770px;
-
+    height: 1750px
 }
+
+  
 
 /* CARDS PROJETOS
