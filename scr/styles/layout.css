@@ -2,7 +2,7 @@
 
 .body-home{
     margin-left: 215px;
-    margin-top: 200px; 
+    margin-top: 130px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +47,6 @@
 .subtext2-home{
     margin: 0;
 }
-
 
 
 /* About me */
@@ -199,21 +198,57 @@
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
     font-weight: bolder;
+    position: absolute;
+    top: 85px;
+    left: 125px;
 
+}
+
+.pink-label2{  /*LINK GITHUB*/
+    color: var(--cor2);
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    position: fixed;
+    right: 105px;
+    top: 160px;
+}
+
+.projects{
+    display: flex;
+    gap: 45px;
+    justify-content: center;
 }
 
 .title-project{
     color: #FFFFFF;
     font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bolder;
+    margin-top: 80px;
+    margin-left: 108px;
 
 }
 
-.pink-label2{
-    color: var(--cor2);
+.card-title{
     font-family: "DM Sans", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bolder;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
 
+.card-body{
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--light-gray);
+    padding-inline: 15px;
+    text-align: justify;
+}
+
+.card-buttons{
+    display: flex;
+    gap: 15px;
+    margin-left: 16px;
 }
