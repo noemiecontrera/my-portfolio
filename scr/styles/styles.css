@@ -6,11 +6,11 @@
     --light-gray: #D3D3D3;
     --cor1: #AE39C6;
     --cor2: #A83EBE;
-    /* --cor3: #692277; */
     --cor4: #571D63;
     --cor5: #BE61D1; 
-}
 
+
+}
 * {
     background-color: var(--bgcolor);
 }
