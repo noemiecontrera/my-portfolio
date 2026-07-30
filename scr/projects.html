@@ -3,31 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <title>Experiences</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <ul class="navlist">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="abtme.html">About me</a></li> 
                 <li><a href="experiences.html">Experiences</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <button class="mainbtn">Curriculum</button>
             </ul>
+            <button class="mainbtn">Curriculum</button>
         </nav>
     </header>
     <main>
-        <section>
-            <p id="title"> PROJECTS </p>
+        <section class="body-projects">
+            <h5 class="pink-label">• work</h5>
+            <h4 class="title-project"> Projects </h4>
+            <a class="pink-label2" href="https://github.com/noemiecontrera" target="_blank">View all on Github → </a>
+            
+            <!-- CONJUNTO DE CARDS -->
+            <div class="projects">
+
+                <!-- CARDS INDIVIDUAIS -->
+                <div class="card-projects">
+                    <p class="card-title">Robotics Team Website</p>
+                    <p class="card-body">Contributing to the development of the university robotics team's website, focusing on creating an engaging digital presence and improving the presentation of projects, events, and team achievements.</p>
+                    <div class="card-buttons">
+                        <button disabled class="btn-card-techs">HTML5</button>
+                        <button disabled class="btn-card-techs">CSS3</button>
+                        <button disabled class="btn-card-techs">Figma</button>
+                    </div>
+                </div>
+
+                <div class="card-projects">
+                    <p class="card-title">Personal Portfolio Website</p>
+                    <p class="card-body">This portfolio was designed and developed to showcase my professional journey, technical skills, and projects. Through this project, I explored modern web development practices, responsive design, and personal branding.</p>
+                    <div class="card-buttons">
+                        <button disabled class="btn-card-techs">HTML5</button>
+                        <button disabled class="btn-card-techs">CSS3</button>
+                        <button disabled class="btn-card-techs">Figma</button>
+                    </div>
+                </div>
+
+                <div class="card-projects">
+                    <p class="card-title">Programming Studies Repository</p>
+                    <p class="card-body">A collection of programming exercises, challenges, and learning projects developed throughout my Computer Engineering studies. This repository documents my continuous learning journey and problem-solving approach.</p>
+                    <div class="card-buttons">
+                        <button disabled class="btn-card-techs">Lógica de Programação</button>
+                        <button disabled class="btn-card-techs">C</button>
+                        <button disabled class="btn-card-techs">Java</button>
+                        <button disabled class="btn-card-techs">Python</button>
+                    </div>
+                </div>
+
+                
+
+            </div>
         </section>
     </main>
     <footer>
-
-    </footer>
-    
+        <nav class="footer-items">
+            <ul class="footer-icons">
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+                <li><i class="fa-solid fa-envelope"></i></li>
+            </ul>
+        </nav>
+    </footer>    
 </body>
 </html>
