@@ -1,21 +1,23 @@
-# 🌐 Portfólio Pessoal
+#  Personal Portfolio - Noemi Contrera
 
-Este repositório contém o código-fonte do meu portfólio pessoal. O projeto foi idealizado para reunir minha trajetória acadêmica, experiências profissionais e os principais projetos que venho desenvolvendo ao longo dos meus estudos em Engenharia da Computação.
-
-
-
-## 🖥️ Seções do Site
-
-* **Home:** Apresentação pessoal destacando minha atuação em Engenharia da Computação, desenvolvimento de software e soluções focadas na resolução de problemas reais.
-* **Experiences:** Linha do tempo destacando minha formação em Engenharia da Computação, atuação como estagiária de TI e experiências anteriores.
-* **Projects:** Vitrine com os principais repositórios e projetos práticos (Linguagens Java, Python, C, Lógica de Programação, Calculadora, Landing Pages, etc.).
+Bem-vindo(a) ao repositório do meu **Portfólio Pessoal**! Este projeto foi desenvolvido para apresentar minha trajetória acadêmica, habilidades técnicas, experiências profissionais e projetos na área de tecnologia e desenvolvimento de software.
 
 
+## Sobre o Projeto
+
+O portfólio é composto por uma interface moderna e intuitiva, organizada em seções e páginas dedicadas:
+
+- **Home:** Apresentação inicial e destaque profissional.
+- **About Me:** Detalhes sobre minha jornada acadêmica, *soft skills* e tecnologias desenvolvidas.
+- **Experiences:** Histórico de atuação profissional (estágio e experiências anteriores) e formação acadêmica em Engenharia da Computação.
+- **Projects:** Vitrine com os principais projetos desenvolvidos e links de repositórios.
 
 
-## 🛠️ Tecnologias Utilizadas
 
-* **Figma:** Antes de iniciar o desenvolvimento, criei uma versão protótipo da interface no **Figma** para alinhar a identidade visual, tipografia e distribuição dos elementos.
-* **HTML5:** Estruturação semântica de todo o conteúdo.
-* **CSS3:** Estilização personalizada, layout responsivo e esquemas de cores.
-* **JavaScript:** *(Em breve)* Para adicionar interatividade, animações e navegação dinâmica.
+## Tecnologias Utilizadas
+
+- **HTML5:** Estruturação semântica das páginas.
+- **CSS3:** Estilização customizada utilizando variáveis CSS, layouts organizados e tipografia moderna.
+- **Font Awesome:** Ícones para redes sociais e elementos visuais.
+- **Google Fonts:** Tipografias *Bricolage Grotesque* e *DM Sans*.
+
