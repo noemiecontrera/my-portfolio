@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Portfolio</title>
 </head>
@@ -11,11 +12,13 @@
         <nav class="navbar">
             <ul class="navlist">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="abtme.html">About me</a></li> 
+                <li><a href="abtme.html">About me</a></li>
                 <li><a href="experiences.html">Experiences</a></li>
                 <li><a href="projects.html">Projects</a></li>
             </ul>
-            <button class="mainbtn">Curriculum</button>
+            <a href="/files/_Resume_EN.pdf" download="Noemi_CV">
+                <button class="mainbtn">Curriculum</button>
+            </a>
         </nav>
     </header>
     <main>
@@ -31,9 +34,9 @@
                     <p class="card-title">Robotics Team Website</p>
                     <p class="card-body">Contributing to the development of the university robotics team's website, focusing on creating an engaging digital presence and improving the presentation of projects, events, and team achievements.</p>
                     <div class="card-buttons">
-                        <button disabled class="btn-card-techs">HTML5</button>
-                        <button disabled class="btn-card-techs">CSS3</button>
-                        <button disabled class="btn-card-techs">Figma</button>
+                        <span class="card-tech-span">HTML5</span>
+                        <span disabled class="card-tech-span">CSS3</span>
+                        <span disabled class="card-tech-span">Figma</span>
                     </div>
                 </div>
 
@@ -41,22 +44,21 @@
                     <p class="card-title">Personal Portfolio Website</p>
                     <p class="card-body">This portfolio was designed and developed to showcase my professional journey, technical skills, and projects. Through this project, I explored modern web development practices, responsive design, and personal branding.</p>
                     <div class="card-buttons">
-                        <button disabled class="btn-card-techs">HTML5</button>
-                        <button disabled class="btn-card-techs">CSS3</button>
-                        <button disabled class="btn-card-techs">Figma</button>
+                        <span class="card-tech-span">HTML5</span>
+                        <span class="card-tech-span">CSS3</span>
+                        <span class="card-tech-span">Figma</span>
                     </div>
                 </div>
-
                 <div class="card-projects">
                     <p class="card-title">Programming Studies Repository</p>
                     <p class="card-body">A collection of programming exercises, challenges, and learning projects developed throughout my Computer Engineering studies. This repository documents my continuous learning journey and problem-solving approach.</p>
                     <div class="card-buttons">
-                        <button disabled class="btn-card-techs">Lógica de Programação</button>
-                        <button disabled class="btn-card-techs">C</button>
-                        <button disabled class="btn-card-techs">Java</button>
-                        <button disabled class="btn-card-techs">Python</button>
+                        <span class="card-tech-span">Lógica de Programação</span>
+                        <span class="card-tech-span">C</span>
+                        <span class="card-tech-span">Java</span>
+                        <span class="card-tech-span">Pythom</span>
                     </div>
-                </div>                
+                </div>
             </div>
         </section>
     </main>
@@ -75,6 +77,6 @@
                 </li>
             </ul>
         </nav>
-    </footer>  
+    </footer>    
 </body>
 </html>
