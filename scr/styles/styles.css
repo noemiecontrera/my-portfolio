@@ -8,12 +8,15 @@
     --cor2: #A83EBE;
     --cor4: #571D63;
     --cor5: #BE61D1; 
-
-
 }
-* {
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
     background-color: var(--bgcolor);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
 }
-
-
-
