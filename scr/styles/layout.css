@@ -48,27 +48,26 @@
     margin: 0;
 }
 
-
 /* About me */
 
 .mini-title {
     font-family: "Bricolage Grotesque", sans-serif;
     color: var(--cor1);
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .mini-title2 {
     font-family: "Bricolage Grotesque", sans-serif;
     color: var(--light-gray);
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .abtme-title {
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 800;
-    font-size: 38px;
+    font-size: 30px;
     color: #FFFFFF;
     width: 520px;
 
@@ -76,17 +75,24 @@
 
 .pink-label-body{
     font-family: "DM Sans", sans-serif;
-    font-size: 19px;
+    font-size: 17px;
     color: var(--cor5);
 
 }
 
-.abtme{
-    margin-top: 85px;
-    max-width: 640px;
+.abtme-label-body{
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 1.5;
+    color: var(--light-gray);
+    margin-top: 45px;
 }
 
-
+.abtme{
+    margin-top: 55px;
+    max-width: 550px;
+}
 
 .body-abtme{
     display: flex;
@@ -112,13 +118,13 @@
   background: transparent;
 }
 
-.title {
+.sskils-title {
   padding: 32px 24px;
   border-right: 2px solid var(--light-gray);
   color: var(--cor1);
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 15px;
   white-space: nowrap;
 }
 
@@ -141,12 +147,10 @@
 }
 
 .skills-list li::before {
-  content: "— ";
+  content: "✦ ";
 }
 
-
-
-/* EXPERIENCES */
+/* Experiences */
 
 .title-XP{
     display: flex;
@@ -155,41 +159,53 @@
     text-align: center;
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 800;
-    font-size: 90px;
+    font-size: 65px;
     color: #FFFFFF;
-
 }
 
 .body-XP{
     display: flex;
-    gap: 85px;
+    gap: 60px;
     align-self: center;
     justify-content: center;
 }
 
 .XP {
-    margin-top: 85px;
-    max-width: 640px;
+    margin-top: 6%;
 }
 
 .XP-title{
     color: #FFFFFF;
     font-family: "DM Sans", sans-serif;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bolder;
 }
 
 .XP-title-pink{
     color: var(--cor2);
     font-family: "DM Sans", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bolder;
+}
+
+.label-XPbody{
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+    color: var(--light-gray);
+    margin-top: 45px;
+
 }
 
 .XP, .XP-title, .XP-title-pink {
     margin: 13px;
 }
 
+.XP-card{
+    margin-bottom: 95px;
+    width: 550PX;
+}
 
 /* Projects */
 
@@ -201,7 +217,6 @@
     position: absolute;
     top: 85px;
     left: 125px;
-
 }
 
 .pink-label2{  /*LINK GITHUB*/
@@ -251,4 +266,11 @@
     display: flex;
     gap: 15px;
     margin-left: 16px;
+}
+
+.card-projects{
+    border: 2px solid #FFFFFF;
+    border-radius: 16px;
+    height: 218px;
+    width: 370px;
 }
