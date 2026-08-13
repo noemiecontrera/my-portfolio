@@ -1,33 +1,37 @@
 header {
     position: sticky;
-    padding: 15px 8%;
     top: 0;
-}
-
-.navlist {
-    text-align: center;
-    font-family: "DM Sans", sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    max-height: 30px;
-    justify-content: center;
-    gap: 20px;
-    margin: 0 auto;
-    
-}
-
-.navlist a {
-    color: #FFFFFF;
+    width: 100%; 
+    background-color: var(--bgcolor);
+    padding: 15px 5%;
+    z-index: 1000;
 }
 
 .navbar {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navlist a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .mainbtn {
@@ -37,18 +41,10 @@ header {
     color: var(--cor4);
     font-family: "DM Sans", sans-serif;
     font-weight: bold;
-    font-size: 23;
-    height: 37px;
-    position: absolute;
-    right: 20px;
-    width: 135px;
-    padding: 10px 14px;
+    font-size: 15px;
+    padding: 8px 18px;
     cursor: pointer;
 }
-
-
-/* Fim header */
-
 
 .projects-btn{
     background-color: var(--cor1);
@@ -70,19 +66,19 @@ header {
     transform: scale(1.03);
 }
 
-.tech-btn:disabled{
+.tech-span{
     background-color: transparent;
-    border-color: var(--cor5);
     border-radius: 10px;
     height: 45px;
     width: fit-content;
-    padding-inline: 17px;
+    padding-inline: 14px;
     font-family: "DM Sans", sans-serif;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 15px;
     color: var(--cor5);
-    opacity: 1;
-    cursor: default;
+    border: 2px solid var(--cor5);
+    align-items: center;
+    line-height: 45px;
 }
 
 .XP-btn:disabled{
@@ -100,13 +96,8 @@ header {
 
 }
 
-.XP-card{
-    margin-bottom: 95px;
-}
-
-.btn-card-techs:disabled{
+.card-tech-span{
     background-color: transparent;
-    border-color: var(--cor5);
     border-radius: 10px;
     height: 30px;
     width: fit-content;
@@ -115,66 +106,62 @@ header {
     font-weight: normal;
     font-size: 11px;
     color: var(--cor5);
-    opacity: 1;
-    cursor: default;
+    border: 2px solid var(--cor5);
+    align-items: center;
+    line-height: 30px;
 }
 
-.card-projects{
-    border: 2px solid #FFFFFF;
-    border-radius: 16px;
-    height: 218px;
-    width: 370px;
-}
-
-/*Footer*/
 
 footer {
     background-color: #FFFFFF;
-    text-align: center;
-    padding: 10px;
+    width: 100%;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    height: 20px;
+    left: 0;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
 }
 
 .footer-icons {
-    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+    align-items: center;
     justify-content: center;
     gap: 20px;
-    margin: 0 auto;
-    background-color: #FFFFFF;
-    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
 }
 
-.footer-icons i{
+.footer-icons li {
+    background-color: transparent;
+}
+
+.footer-icons a {
+    color: var(--cor4); 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons i {
     color: var(--cor4);
-    background-color: #FFFFFF;
-    height: 100px;
-    width: 30px;
+    font-size: 22px;   
     cursor: pointer;
-
+    transition: transform 0.2s ease;
 }
 
-
-
-
-.v-line {
-    border-left: 10px solid #FFFFFF;
-    height: 1200px;
-    position: absolute;
-    left: 350px;
-    margin-left: -3px;
-    top: 175px;
+.footer-icons i:hover {
+    transform: scale(1.15); 
 }
-
-.timeline{
-    justify-self: center;    
-    width: 770px;
-
-}
-
-/* CARDS PROJETOS
