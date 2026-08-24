@@ -1,8 +1,9 @@
 /*Home*/
 
 .body-home{
-    margin-left: 215px;
-    margin-top: 130px; 
+    margin-left: clamp(24px, 10vw, 215px);
+    margin-right: clamp(24px, 10vw, 60px);
+    margin-top: clamp(60px, 12vw, 130px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +14,7 @@
 .title-home{
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 800;
-    font-size: 90px;
+    font-size: clamp(38px, 9vw, 90px);
     color: #FFFFFF;
     margin-bottom: 0.5rem;
     line-height: 1;
@@ -22,14 +23,14 @@
 .subtext-home{
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 800;
-    font-size: 70px;
+    font-size: clamp(30px, 7vw, 70px);
     color: var(--light-gray);
 }
 
 .subtext2-home{
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 800;
-    font-size: 70px;
+    font-size: clamp(30px, 7vw, 70px);
     color: var(--cor1);
 }
 
@@ -40,6 +41,8 @@
     line-height: 1.5;
     color: var(--light-gray);
     margin-top: 45px;
+    max-width: 640px;
+    width: 100%;
 }
 
 .title-home,
@@ -67,9 +70,10 @@
 .abtme-title {
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 800;
-    font-size: 30px;
+    font-size: clamp(24px, 4vw, 30px);
     color: #FFFFFF;
-    width: 520px;
+    max-width: 520px;
+    width: 100%;
 
 }
 
@@ -87,18 +91,23 @@
     line-height: 1.5;
     color: var(--light-gray);
     margin-top: 45px;
+    max-width: 550px;
+    width: 100%;
 }
 
 .abtme{
     margin-top: 55px;
     max-width: 550px;
+    width: 100%;
 }
 
 .body-abtme{
     display: flex;
+    flex-wrap: wrap;
     gap: 85px;
     align-self: center;
     justify-content: center;
+    padding-inline: clamp(20px, 5vw, 0px);
 }
 
 .group-techs{
@@ -111,7 +120,8 @@
 
 .soft-skills {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: stretch;
   border: 2px solid var(--light-gray);
   border-radius: 20px;
   overflow: hidden;
@@ -126,6 +136,8 @@
   font-weight: 700;
   font-size: 15px;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
 
 .skills-list {
@@ -159,15 +171,18 @@
     text-align: center;
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 800;
-    font-size: 65px;
+    font-size: clamp(34px, 8vw, 65px);
     color: #FFFFFF;
+    padding-inline: 20px;
 }
 
 .body-XP{
     display: flex;
+    flex-wrap: wrap;
     gap: 60px;
     align-self: center;
     justify-content: center;
+    padding-inline: clamp(20px, 5vw, 0px);
 }
 
 .XP {
@@ -204,7 +219,8 @@
 
 .XP-card{
     margin-bottom: 95px;
-    width: 550PX;
+    max-width: 550px;
+    width: 100%;
 }
 
 /* Projects */
@@ -214,34 +230,33 @@
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
     font-weight: bolder;
-    position: absolute;
-    top: 85px;
-    left: 125px;
+    margin: 40px 0 0 clamp(20px, 8vw, 125px);
 }
 
 .pink-label2{  /*LINK GITHUB*/
+    display: block;
     color: var(--cor2);
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
     font-weight: bolder;
-    position: fixed;
-    right: 105px;
-    top: 160px;
+    margin: 12px 0 0 clamp(20px, 8vw, 125px);
 }
 
 .projects{
     display: flex;
+    flex-wrap: wrap;
     gap: 45px;
     justify-content: center;
+    padding-inline: clamp(20px, 5vw, 0px);
 }
 
 .title-project{
     color: #FFFFFF;
     font-family: "Bricolage Grotesque", sans-serif;
-    font-size: 50px;
+    font-size: clamp(34px, 7vw, 50px);
     font-weight: bolder;
-    margin-top: 80px;
-    margin-left: 108px;
+    margin-top: 20px;
+    margin-left: clamp(20px, 8vw, 108px);
 
 }
 
@@ -264,13 +279,109 @@
 
 .card-buttons{
     display: flex;
-    gap: 15px;
-    margin-left: 16px;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+    margin: 8px 16px 16px;
 }
 
 .card-projects{
     border: 2px solid #FFFFFF;
     border-radius: 16px;
-    height: 218px;
-    width: 370px;
+    min-height: 218px;
+    width: min(370px, 100%);
+}
+
+
+@media (min-width: 900px) {
+    .pink-label{
+        position: absolute;
+        top: 85px;
+        left: 125px;
+        margin: 0;
+    }
+
+    .pink-label2{
+        position: fixed;
+        right: 105px;
+        top: 160px;
+        margin: 0;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .body-home{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .body-abtme{
+        gap: 50px;
+    }
+
+    .body-XP{
+        gap: 35px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .body-home{
+        margin-top: 60px;
+        text-align: left;
+    }
+
+    .body-abtme{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .abtme{
+        margin-top: 30px;
+    }
+
+    .skills-list{
+        grid-template-columns: repeat(2, auto);
+        padding: 20px;
+        gap: 14px 24px;
+    }
+
+    .soft-skills{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sskils-title{
+        border-right: none;
+        border-bottom: 2px solid var(--light-gray);
+        justify-content: center;
+        text-align: center;
+    }
+
+    .body-XP{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .XP-card{
+        margin-bottom: 50px;
+    }
+
+    .projects{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-list{
+        grid-template-columns: 1fr;
+    }
+
+    .card-projects{
+        min-height: auto;
+        padding-bottom: 15px;
+    }
 }
